@@ -3,7 +3,7 @@ package atelier1.exo1;
 import java.util.*;
 
 // Déclaration de la classe 'des'
-public class des {
+public class Des {
 
     // Déclaration des attributs
     private String nom; 
@@ -13,7 +13,7 @@ public class des {
     private static Random r = new Random();
 
     // Constructeur prenant un nom et un nombre de faces en paramètres
-    public des(String nom, int nbFace) {
+    public Des(String nom, int nbFace) {
 
         totalDés ++;  // Incrémente le compteur de dés créés
         
@@ -31,7 +31,7 @@ public class des {
     }
 
     // Constructeur par défaut
-    public des(){
+    public Des(){
         totalDés ++;  // Incrémente le compteur de dés créés
         deAvecNum ++;  // Incrémente le compteur de dés avec numéro
         this.nom = "De n°"+ deAvecNum;  // Définit un nom par défaut
@@ -39,7 +39,7 @@ public class des {
     }
 
     // Constructeur avec seulement un nom
-    public des(String nom){
+    public Des(String nom){
         totalDés ++;  // Incrémente le compteur de dés créés
         this.nom = nom;
         this.nbFace = 6;  // Définit le nombre de faces par défaut à 6
@@ -47,7 +47,7 @@ public class des {
     }
 
     // Constructeur avec seulement un nombre de faces
-    public des( int nbFace){
+    public Des( int nbFace){
         totalDés ++;  // Incrémente le compteur de dés créés
         deAvecNum ++;  // Incrémente le compteur de dés avec numéro
         this.nom = "De n°"+ deAvecNum;  // Définit un nom par défaut
@@ -123,8 +123,8 @@ public class des {
     // Méthode pour comparer deux dés
     public boolean equals(Object obj){
         boolean result = false;
-        if ((obj != null) && (obj instanceof des)){
-            des newDe = (des) obj;
+        if ((obj != null) && (obj instanceof Des)){
+            Des newDe = (Des) obj;
             result = ((this.nom.equals(newDe.nom)) && (this.nbFace == newDe.nbFace));
         }
         return result;

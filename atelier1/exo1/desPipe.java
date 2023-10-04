@@ -2,13 +2,13 @@
 package atelier1.exo1;
 
 // Déclaration de la classe 'desPipe' qui hérite de la classe 'des'
-public class desPipe extends des {
+public class DesPipe extends Des {
 
     // Attribut spécifique à la classe 'desPipe'
     private final int borneMinimale;
 
     // Constructeur de la classe 'desPipe' prenant un nom, un nombre de faces et une borne minimale en paramètres
-    public desPipe(String nom, int nbFace, int borneMinimale) {
+    public DesPipe(String nom, int nbFace, int borneMinimale) {
         // Appel au constructeur de la classe 'des' avec les paramètres 'nom' et 'nbFace'
         super(nom, nbFace);
 

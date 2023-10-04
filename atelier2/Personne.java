@@ -2,6 +2,8 @@ package atelier2;
 
 import java.util.*;
 
+import atelier1.exo1.Des;
+
 
 
 public class Personne{
@@ -42,6 +44,7 @@ public class Personne{
 	 * @param ville la ville ou la personne habite
 	 */
 	public Personne(String leNom,String lePrenom, int j, int m, int a, int numero, String rue, String code_postal, String ville){
+
 		this(leNom, lePrenom, new GregorianCalendar(a,m,j),new Adresse(numero,rue,code_postal,ville));
 	}
 
@@ -114,6 +117,16 @@ public class Personne{
 		return this.dateNaissance.before(p2.dateNaissance);
 	
 	}
+
+	public boolean equals(Object obj){
+        boolean result = false;
+        if ((obj != null) && (obj instanceof Personne)){
+            Personne newPersonne = (Personne) obj;
+            result = ((this.nom.equals(newPersonne.nom)) && (this.adresse.equals(newPersonne.adresse)) && (this.dateNaissance.equals(newPersonne.dateNaissance)) && (this.prenom.equals(newPersonne.prenom)));
+        }
+        return result;
+    }
+
 }
 
 

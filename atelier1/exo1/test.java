@@ -1,12 +1,12 @@
 package atelier1.exo1;
 
-public class test {
+public class Test {
 
     public static void main(String[] args){
-        des sansParametre = new des();
-        des leDeAvecUnNom = new des("leDeAvecUnNom");
-        des leDeAvecFace = new des(3);
-        des leDeAvecUnNomEtUnNum = new des("leDeAvecUnNomEtUnNum", 15);
+        Des sansParametre = new Des();
+        Des leDeAvecUnNom = new Des("leDeAvecUnNom");
+        Des leDeAvecFace = new Des(3);
+        Des leDeAvecUnNomEtUnNum = new Des("leDeAvecUnNomEtUnNum", 15);
 
 
 
@@ -29,7 +29,7 @@ public class test {
 
         System.out.println("--------------------------------------------------------");
 
-        System.out.println("nombre de des " + des.getTotalDesCrees());
+        System.out.println("nombre de Des " + Des.getTotalDesCrees());
 
 
         System.out.println("--------------------------------------------------------");
@@ -43,7 +43,7 @@ public class test {
 
         System.out.println("--------------------------------------------------------");
 
-        desPipe dePipe = new desPipe("Dé Pipé", 6, 4);
+        DesPipe dePipe = new DesPipe("Dé Pipé", 6, 4);
 
         System.out.println(dePipe.toString());
         System.out.println(dePipe.lancer());
@@ -52,7 +52,7 @@ public class test {
         System.out.println("--------------------------------------------------------");
 
 
-        desMemoire deMemoire = new desMemoire("DeMemoire", 6);
+        DesMemoire deMemoire = new DesMemoire("DeMemoire", 6);
         System.out.println(deMemoire.toString());
        
         

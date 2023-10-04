@@ -1,12 +1,12 @@
 package atelier1.exo2;
 
-public class test {
+public class Test {
 
     public static void main(String[] args){
 
-        entier nombreNonDefini = new entier(0, 10);
-        entier nombreDefini = new entier(5, 2, 6);
-        entierFou entierFou1 = new entierFou(5, 100, 8);
+        Entier nombreNonDefini = new Entier(0, 10);
+        Entier nombreDefini = new Entier(5, 2, 6);
+        EntierFou entierFou1 = new EntierFou(5, 100, 8);
 
 
         System.out.println("borne 1 = " + nombreDefini.getBorne1());

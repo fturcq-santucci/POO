@@ -1,11 +1,10 @@
 // Définition du package
 package atelier1.exo2;
 
-// Importation de la classe 'des' du package 'atelier1.exo1'
-import atelier1.exo1.des;
+
 
 // Déclaration de la classe 'entier'
-public class entier {
+public class Entier {
 
     // Déclaration des attributs
     private int valeur;
@@ -13,7 +12,7 @@ public class entier {
     private int borne2;
 
     // Constructeur prenant deux bornes et une valeur en paramètres
-    public entier(int borne1, int borne2, int valeur) {
+    public Entier(int borne1, int borne2, int valeur) {
         // Vérification et attribution des bornes dans l'ordre croissant
         if (borne1 > borne2) {
             this.borne1 = borne2;
@@ -31,7 +30,7 @@ public class entier {
     }
 
     // Constructeur prenant deux bornes en paramètres
-    public entier(int borne1, int borne2) {
+    public Entier(int borne1, int borne2) {
         // Vérification et attribution des bornes dans l'ordre croissant
         if (borne1 > borne2) {
             this.borne1 = borne2;
@@ -92,7 +91,7 @@ public class entier {
 
     // Méthode pour comparer deux entiers
     public boolean equals(Object obj) {
-        entier newEntier = (entier) obj;
+        Entier newEntier = (Entier) obj;
         return this.valeur == newEntier.valeur && this.borne1 == newEntier.borne1 && this.borne2 == newEntier.borne2;
     }
 
