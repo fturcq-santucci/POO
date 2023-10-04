@@ -66,6 +66,11 @@ public class Personne{
 	public GregorianCalendar getDateNaissance() {
 		return dateNaissance;
 	}
+
+	public static int getNbPersonne() {
+		return nbPersonne;
+	}
+
 	/**
 	 * Accesseur
 	 * @return retourne l'adresse	 
@@ -95,8 +100,19 @@ public class Personne{
 		return result;
 	}
 
-	public boolean plusAge(){
+	
+	public boolean plusAge(Personne p1, Personne p2){
+
 		
+		return p1.dateNaissance.before(p2.dateNaissance);
+	
+	}
+
+	public boolean plusAgeQue(Personne p2){
+
+		
+		return this.dateNaissance.before(p2.dateNaissance);
+	
 	}
 }
 
