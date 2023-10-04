@@ -1,5 +1,7 @@
 package atelier1.exo2;
 
+import atelier1.exo1.des;
+
 public class entier{
 
     private int valeur;
@@ -107,12 +109,14 @@ public class entier{
 
     };
 
-    public boolean equals(Object obj) {
-        if (this == obj) return true;
-        if (obj == null || getClass() != obj.getClass()) return false;
-        entier other = (entier) obj;
-        return this.valeur == other.valeur && this.borne1 == other.borne1 && this.borne2 == other.borne2;
+    public boolean equals(Object obj){
+
+        entier newEntier = (entier) obj;
+        return this.valeur == newEntier.valeur && this.borne1 == newEntier.borne1 && this.borne2 == newEntier.borne2;
+        
     }
+
+    
 
     
     
